@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="285.0" prefWidth="436.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="controllers.VerifyUserController">
+  <children>
+    <Label layoutX="32.0" layoutY="31.0" text="Verify Yourself">
+      <font>
+        <Font name="Courier New Bold" size="26.0" />
+      </font>
+    </Label>
+    <Label layoutX="32.0" layoutY="76.0" text="Please Enter the Verification code which we have sent in your email:">
+      <font>
+        <Font size="13.0" />
+      </font>
+    </Label>
+    <TextField fx:id="vercode" layoutX="118.0" layoutY="121.0" prefWidth="200.0" />
+    <Button onAction="#verify" layoutX="176.0" layoutY="167.0" mnemonicParsing="false" text="Verify">
+      <font>
+        <Font name="Courier New" size="16.0" />
+      </font>
+    </Button>
+    <Hyperlink layoutX="38.0" layoutY="211.0" text="Did not receive verification code yet ? Click here to get a new one !" textFill="#0029ff" />
+  </children>
+</AnchorPane>

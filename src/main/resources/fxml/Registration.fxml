@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="615.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="controllers.RegistrationController">
+  <children>
+    <Label layoutX="50.0" layoutY="34.0" text="CLIENT REGISTRATION">
+      <font>
+        <Font name="Courier New Bold" size="25.0" />
+      </font>
+    </Label>
+    <GridPane layoutX="74.0" layoutY="102.0" prefHeight="325.0" prefWidth="452.0">
+      <children>
+        <Label text="FIRST NAME" GridPane.columnIndex="0" GridPane.rowIndex="0">
+          <font>
+            <Font name="Courier New" size="16.0" fx:id="x1" />
+          </font>
+        </Label>
+        <Label font="$x1" text="LAST NAME" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+        <Label font="$x1" text="BIRTH DATE" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+        <Label font="$x1" text="EMAIL ADDRESS" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+        <Label font="$x1" text="PHONE" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+        <Label font="$x1" text="PASSWORD" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+        <Label font="$x1" text="CONFIRM PASSWORD" GridPane.columnIndex="0" GridPane.rowIndex="6" />
+        <TextField fx:id="fname" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+        <TextField fx:id="lname" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        <DatePicker fx:id="datepicker" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+        <TextField fx:id="email" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+        <TextField fx:id="phone" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+        <PasswordField fx:id="password" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+        <PasswordField fx:id="confirmpassword" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+      </children>
+      <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="225.0" minWidth="10.0" prefWidth="177.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="297.0" minWidth="10.0" prefWidth="275.0" />
+      </columnConstraints>
+      <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      </rowConstraints>
+    </GridPane>
+    <Label layoutX="74.0" layoutY="505.0" text="Already have an account?" />
+    <Hyperlink fx:id="hyperlink" onMouseClicked="#openLoginPage" layoutX="209.0" layoutY="502.0" text="Login Here" />
+    <Button layoutX="323.0" layoutY="441.0" mnemonicParsing="false" onAction="#registerUser" text="REGISTER" wrapText="false">
+      <font>
+        <Font name="Courier New Bold" size="20.0" />
+      </font>
+    </Button>
+  </children>
+  <stylesheets>
+    <URL value="@registration.css" />
+  </stylesheets>
+</AnchorPane>

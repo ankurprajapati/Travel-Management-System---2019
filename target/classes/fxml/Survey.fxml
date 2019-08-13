@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="514.0" prefWidth="728.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="controllers.SurveyController">
+  <children>
+    <Label layoutX="56.0" layoutY="30.0" text="Survey:">
+      <font>
+        <Font name="System Bold" size="24.0" />
+      </font>
+    </Label>
+    <Button layoutX="252.0" layoutY="430.0" mnemonicParsing="false" onAction="#submit" text="Submit">
+      <font>
+        <Font size="16.0" fx:id="x1" />
+      </font>
+    </Button>
+    <Label fx:id="q1" layoutX="64.0" layoutY="85.0" text="Label" />
+    <RadioButton fx:id="q1r1" layoutX="444.0" layoutY="114.0" mnemonicParsing="false" text="AGREE" />
+    <RadioButton fx:id="q1r2" layoutX="226.0" layoutY="114.0" mnemonicParsing="false" text="DISAGREE" />
+    <RadioButton fx:id="q1r3" layoutX="347.0" layoutY="114.0" mnemonicParsing="false" text="NEUTRAL" />
+    <RadioButton fx:id="q1r4" layoutX="547.0" layoutY="114.0" mnemonicParsing="false" text="STRONGLY AGREE" />
+    <RadioButton fx:id="q1r5" layoutX="63.0" layoutY="114.0" mnemonicParsing="false" text="STRONGLY DISAGREE" />
+    <Label fx:id="q2" layoutX="63.0" layoutY="149.0" text="Label" />
+    <RadioButton fx:id="q2r1" layoutX="444.0" layoutY="178.0" mnemonicParsing="false" text="AGREE" />
+    <RadioButton fx:id="q2r2" layoutX="224.0" layoutY="178.0" mnemonicParsing="false" text="DISAGREE" />
+    <RadioButton fx:id="q2r3" layoutX="347.0" layoutY="178.0" mnemonicParsing="false" text="NEUTRAL" />
+    <RadioButton fx:id="q2r4" layoutX="547.0" layoutY="178.0" mnemonicParsing="false" text="STRONGLY AGREE" />
+    <RadioButton fx:id="q2r5" layoutX="63.0" layoutY="178.0" mnemonicParsing="false" text="STRONGLY DISAGREE" />
+    <Label fx:id="q3" layoutX="63.0" layoutY="211.0" text="Label" />
+    <RadioButton fx:id="q3r1" layoutX="444.0" layoutY="240.0" mnemonicParsing="false" text="AGREE" />
+    <RadioButton fx:id="q3r2" layoutX="224.0" layoutY="241.0" mnemonicParsing="false" text="DISAGREE" />
+    <RadioButton fx:id="q3r3" layoutX="347.0" layoutY="240.0" mnemonicParsing="false" text="NEUTRAL" />
+    <RadioButton fx:id="q3r4" layoutX="547.0" layoutY="240.0" mnemonicParsing="false" text="STRONGLY AGREE" />
+    <RadioButton fx:id="q3r5" layoutX="63.0" layoutY="240.0" mnemonicParsing="false" text="STRONGLY DISAGREE" />
+    <Label fx:id="q4" layoutX="63.0" layoutY="275.0" text="Label" />
+    <RadioButton fx:id="q4r1" layoutX="444.0" layoutY="312.0" mnemonicParsing="false" text="AGREE" />
+    <RadioButton fx:id="q4r2" layoutX="224.0" layoutY="312.0" mnemonicParsing="false" text="DISAGREE" />
+    <RadioButton fx:id="q4r3" layoutX="347.0" layoutY="312.0" mnemonicParsing="false" text="NEUTRAL" />
+    <RadioButton fx:id="q4r4" layoutX="547.0" layoutY="312.0" mnemonicParsing="false" text="STRONGLY AGREE" />
+    <RadioButton fx:id="q4r5" layoutX="63.0" layoutY="312.0" mnemonicParsing="false" text="STRONGLY DISAGREE" />
+    <Label fx:id="q5" layoutX="64.0" layoutY="345.0" text="Label" />
+    <RadioButton fx:id="q5r1" layoutX="444.0" layoutY="374.0" mnemonicParsing="false" text="AGREE" />
+    <RadioButton fx:id="q5r2" layoutX="224.0" layoutY="374.0" mnemonicParsing="false" text="DISAGREE" />
+    <RadioButton fx:id="q5r3" layoutX="347.0" layoutY="374.0" mnemonicParsing="false" text="NEUTRAL" />
+    <RadioButton fx:id="q5r4" layoutX="547.0" layoutY="374.0" mnemonicParsing="false" text="STRONGLY AGREE" />
+    <RadioButton fx:id="q5r5" layoutX="63.0" layoutY="374.0" mnemonicParsing="false" text="STRONGLY DISAGREE" />
+    <Button font="$x1" layoutX="363.0" layoutY="430.0" mnemonicParsing="false" onAction="#close" text="Close" />
+  </children>
+  <stylesheets>
+    <URL value="@survey.css" />
+  </stylesheets>
+</AnchorPane>

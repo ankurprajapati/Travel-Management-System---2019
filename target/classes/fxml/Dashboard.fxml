@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="399.0" prefWidth="729.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="controllers.DashboardController">
+  <children>
+    <Label fx:id="label" layoutX="126.0" layoutY="120.0" minHeight="16.0" minWidth="69.0" />
+    <MenuBar fx:id="menubar1" layoutX="0.0" layoutY="0.0" prefWidth="729.0">
+      <menus>
+        <Menu mnemonicParsing="false" text="Book" fx:id="menu1">
+          <items>
+            <MenuItem mnemonicParsing="false" onAction="#packageBooking" text="Package" fx:id="menuitem11" />
+            <Menu mnemonicParsing="false" text="Flight" fx:id="menuitem12">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#flightSearch" text="Search" />
+              </items>
+            </Menu>
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="User" fx:id="menu2">
+          <items>
+            <MenuItem mnemonicParsing="false" onAction="#myCartAction" text="My Cart" fx:id="menuitem21" />
+            <MenuItem mnemonicParsing="false" onAction="#myOrdersAction" text="My Orders" fx:id="menuitem22" />
+            <MenuItem mnemonicParsing="false" onAction="#surveyAction" text="Survey" fx:id="menuitem23" />
+            <MenuItem mnemonicParsing="false" text="Logout" fx:id="menuitem24" />
+            <MenuItem mnemonicParsing="false" onAction="#handleButtonAction" text="Exit" fx:id="menuitem25" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help" fx:id="menu3">
+          <items>
+            <MenuItem mnemonicParsing="false" onAction="#aboutUsAction" text="About Us" fx:id="menuitem31" />
+            <MenuItem mnemonicParsing="false" onAction="#faqAction" text="News" fx:id="menuitem32" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <ImageView fx:id="imageview1" fitHeight="150.0" fitWidth="200.0" layoutX="27.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true" />
+    <ImageView fx:id="imageview2" fitHeight="150.0" fitWidth="200.0" layoutX="266.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true" />
+    <ImageView fx:id="imageview3" fitHeight="150.0" fitWidth="200.0" layoutX="502.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true" />
+    <ImageView fx:id="imageview4" fitHeight="150.0" fitWidth="200.0" layoutX="27.0" layoutY="229.0" pickOnBounds="true" preserveRatio="true" />
+    <ImageView fx:id="imageview5" fitHeight="150.0" fitWidth="200.0" layoutX="266.0" layoutY="229.0" pickOnBounds="true" preserveRatio="true" />
+    <ImageView fx:id="imageview6" fitHeight="150.0" fitWidth="200.0" layoutX="502.0" layoutY="229.0" pickOnBounds="true" preserveRatio="true" />
+  </children>
+</AnchorPane>

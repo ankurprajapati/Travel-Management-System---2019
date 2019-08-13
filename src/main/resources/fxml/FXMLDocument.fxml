@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="311.9998779296875" prefWidth="592.9998779296875" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="controllers.FXMLDocumentController">
+  <children>
+    <Label fx:id="label" layoutX="126.0" layoutY="120.0" minHeight="16.0" minWidth="69.0" />
+    <Label layoutX="56.0" layoutY="86.0" text="Username:">
+      <font>
+        <Font size="16.0" fx:id="x1" />
+      </font>
+    </Label>
+    <Label font="$x1" layoutX="55.0" layoutY="125.0" text="Password:" />
+    <Label layoutX="55.0" layoutY="29.0" text="Login">
+      <font>
+        <Font name="Arial Black" size="24.0" />
+      </font>
+    </Label>
+    <TextField fx:id="username" layoutX="173.0" layoutY="86.0" prefWidth="200.0" />
+    <Button font="$x1" layoutX="177.0" layoutY="173.0" mnemonicParsing="false" onAction="#login" prefWidth="69.0" text="Login" />
+    <Button font="$x1" layoutX="295.0" layoutY="173.0" mnemonicParsing="false" onAction="#register" text="Register" />
+    <Label fx:id="forgotpass" font="$x1" layoutX="210.0" layoutY="218.0" text="Forgot Password?" textFill="#0052cc" onMouseClicked="#forgotpassclick"/>
+    <Label fx:id="l1" font="$x1" layoutX="403.0" layoutY="86.0" text="This field is required" textFill="RED" />
+    <Label fx:id="l2" font="$x1" layoutX="403.0" layoutY="125.0" text="This field is required" textFill="RED" />
+    <PasswordField fx:id="password" layoutX="173.0" layoutY="125.0" prefWidth="200.0" />
+    <Button onAction="#exit" font="$x1" layoutX="231.0" layoutY="247.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="84.0" text="Exit" />
+  </children>
+</AnchorPane>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="813.0" prefWidth="1105.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="controllers.MyorderController">
+  <children>
+    <TitledPane fx:id="titledPaneFlights" animated="false" collapsible="false" layoutX="90.0" layoutY="93.0" prefHeight="263.0" prefWidth="910.0" text="Your Flights">
+      <content>
+        <AnchorPane fx:id="anchorPaneContent1" minHeight="0.0" minWidth="0.0" prefHeight="197.0" prefWidth="887.0">
+          <children>
+            <TableView id="tblFlights" layoutX="30.0" layoutY="26.0" prefHeight="173.0" prefWidth="861.0" tableMenuButtonVisible="false">
+              <columns>
+                <TableColumn prefWidth="75.0" text="Flight" fx:id="colFlight" />
+                <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="174.0" text="Departure" fx:id="colDeparture" />
+                <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="169.0" text="Arrival" fx:id="colArrival" />
+                <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="161.0" text="Departure Time" fx:id="colDepartureTime" />
+                <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="158.0" text="Arrival Time" fx:id="colArrivalTime" />
+                <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="122.0" text="Total" fx:id="colTotal" />
+              </columns>
+            </TableView>
+          </children>
+        </AnchorPane>
+      </content>
+    </TitledPane>
+    <TitledPane fx:id="titledPanePackage" animated="false" collapsible="false" layoutX="93.0" layoutY="400.0" minWidth="621.0" prefHeight="239.0" prefWidth="910.0" text="Your Package">
+      <content>
+        <AnchorPane fx:id="anchorPaneContent2" minHeight="0.0" minWidth="0.0" prefHeight="141.0" prefWidth="722.0">
+          <children>
+            <TableView id="tblPackage" layoutX="14.0" layoutY="6.0" prefHeight="187.0" prefWidth="874.0" tableMenuButtonVisible="false">
+              <columns>
+                <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="317.0" text="Package Name" fx:id="colPackageName" />
+                <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="307.0" text="Package Days" fx:id="colPackageDays" />
+                <!--                <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="96.0" text="From Date" />
+                <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="94.0" text="To Date" />
+                <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="99.0" text="Individuals" />
+                <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="75.0" text="Quantity" />-->
+                <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="252.0" text="Total" fx:id="colPackageTotal" />
+              </columns>
+            </TableView>
+          </children>
+        </AnchorPane>
+      </content>
+    </TitledPane>
+    <Label id="lblMyCart" layoutX="479.0" layoutY="31.0" prefHeight="40.0" prefWidth="138.0" text="MY ORDERS" textAlignment="CENTER" textFill="#990000">
+      <font>
+        <Font name="Times New Roman Bold" size="20.0" fx:id="x1" />
+      </font>
+    </Label>
+    <Label fx:id="lblTotal" font="$x1" layoutX="751.0" layoutY="662.0" prefHeight="40.0" prefWidth="77.0" text="TOTAL:" />
+    <TextField fx:id="txtTotal" editable="false" layoutX="839.0" layoutY="669.0" prefWidth="159.0" />
+  </children>
+</AnchorPane>

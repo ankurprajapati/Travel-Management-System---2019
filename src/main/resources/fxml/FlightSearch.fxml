@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="controllers.FlightSearchController">
+  <children>
+    <Label layoutX="25.0" layoutY="47.0" text="Departure" />
+    <Label layoutX="25.0" layoutY="75.0" text="Arrival" />
+    <CheckBox fx:id="isRoundTrip" layoutX="25.0" layoutY="114.0" mnemonicParsing="false" text="Round Trip" />
+    <RadioButton fx:id="economyClass" layoutX="25.0" layoutY="149.0" mnemonicParsing="false" text="Economy Class" />
+    <RadioButton fx:id="businessClass" layoutX="146.0" layoutY="149.0" mnemonicParsing="false" text="Business Class" />
+    <RadioButton fx:id="firstClass" layoutX="261.0" layoutY="149.0" mnemonicParsing="false" text="First Class" />
+    <ComboBox fx:id="departureCombo" layoutX="123.0" layoutY="48.0">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="AMD" />
+          <String fx:value="YYZ" />
+          <String fx:value="BOM" />
+        </FXCollections>
+      </items>
+    </ComboBox>
+    <ComboBox fx:id="arrivalCombo" layoutX="123.0" layoutY="76.0">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="AMD" />
+          <String fx:value="YYZ" />
+          <String fx:value="BOM" />
+        </FXCollections>
+      </items>
+    </ComboBox>
+    <Label layoutX="240.0" layoutY="43.0" text="Departure Date" />
+    <DatePicker fx:id="dDatePicker" layoutX="340.0" layoutY="39.0" />
+    <Label layoutX="240.0" layoutY="75.0" text="Arrival Date" />
+    <DatePicker fx:id="aDatePicker" layoutX="340.0" layoutY="73.0" />
+    <ComboBox fx:id="travellers" layoutX="206.0" layoutY="112.0" minWidth="34.0" prefHeight="21.0" prefWidth="50.0" promptText="1">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="1" />
+          <String fx:value="2" />
+          <String fx:value="3" />
+          <String fx:value="4" />
+          <String fx:value="5" />
+          <String fx:value="6" />
+          <String fx:value="7" />
+          <String fx:value="3" />
+          <String fx:value="8" />
+          <String fx:value="9" />
+          <String fx:value="10" />
+        </FXCollections>
+      </items>
+    </ComboBox>
+    <Label layoutX="134.0" layoutY="117.0" text="Travellers" />
+    <Button layoutX="369.0" layoutY="147.0" mnemonicParsing="false" onAction="#searchFlights" text="Search Flights" />
+    <TableView fx:id="tblFlights" layoutX="25.0" layoutY="186.0" prefHeight="200.0" prefWidth="546.0">
+      <columns>
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="89.0" text="Flight Number" fx:id="colFlightNumber" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="64.0" text="Departure" fx:id="colDeparture" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="102.0" text="Departure Date" fx:id="colDDate" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="41.0" text="Arrival" fx:id="colArrival" />
+        <TableColumn prefWidth="75.0" text="Arrival Date" fx:id="colArrivalDate" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="58.0" text="Travellers" fx:id="colTravellers" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="51.0" text="Price" fx:id="colPrice" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="69.0" text="Add to cart" fx:id="colAddtoPrice" />
+      </columns>
+    </TableView>
+    <Label layoutX="20.0" layoutY="8.0" text="FLIGHT SEARCH">
+      <font>
+        <Font name="System Bold" size="24.0" />
+      </font>
+    </Label>
+  </children>
+  <stylesheets>
+    <URL value="@flightsearch.css" />
+  </stylesheets>
+</AnchorPane>

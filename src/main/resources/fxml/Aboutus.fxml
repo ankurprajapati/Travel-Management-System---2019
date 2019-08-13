@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="747.0" prefWidth="1020.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="controllers.AboutusController">
+  <children>
+    <TextArea layoutX="145.0" layoutY="153.0" prefHeight="536.0" prefWidth="743.0" text="Here We are planning to Provide Information related to us. &#10;&#10;Using This page anyone can contact us." wrapText="true" />
+    <Label layoutX="473.0" layoutY="61.0" text="About Us">
+      <font>
+        <Font size="18.0" fx:id="x1" />
+      </font>
+    </Label>
+    <ImageView fx:id="alexImage" fitHeight="183.75" fitWidth="245.0" layoutX="265.0" layoutY="271.0" pickOnBounds="true" preserveRatio="true" />
+    <ImageView fx:id="ankurImage" fitHeight="150.0" fitWidth="200.0" layoutX="591.0" layoutY="288.0" pickOnBounds="true" preserveRatio="true" />
+    <ImageView fx:id="gargiImage" fitHeight="150.0" fitWidth="200.0" layoutX="288.0" layoutY="489.0" pickOnBounds="true" preserveRatio="true" />
+    <ImageView fx:id="falakImage" fitHeight="150.0" fitWidth="200.0" layoutX="592.0" layoutY="489.0" pickOnBounds="true" preserveRatio="true" />
+  </children>
+</AnchorPane>

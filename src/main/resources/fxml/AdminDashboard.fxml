@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="controllers.AdminDashboardController">
+  <children>
+    <MenuBar layoutX="0.0" layoutY="2.0" prefWidth="600.0">
+      <menus>
+        <Menu mnemonicParsing="false" text="Flight">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Add" />
+            <MenuItem mnemonicParsing="false" text="Update" />
+            <MenuItem mnemonicParsing="false" text="Delete" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Hotel">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Add" />
+            <MenuItem mnemonicParsing="false" text="Update" />
+            <MenuItem mnemonicParsing="false" text="Delete" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Package">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Add" />
+            <MenuItem mnemonicParsing="false" text="Update" />
+            <MenuItem mnemonicParsing="false" text="Delete" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Promo Code">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Add" />
+            <MenuItem mnemonicParsing="false" text="Update" />
+            <MenuItem mnemonicParsing="false" text="Delete" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Services">
+          <items>
+            <Menu mnemonicParsing="false" text="News">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Add" />
+                <MenuItem mnemonicParsing="false" text="Update" />
+                <MenuItem mnemonicParsing="false" text="Delete" />
+              </items>
+            </Menu>
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Exit">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Logout" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+  </children>
+  <stylesheets>
+    <URL value="@admindashboard.css" />
+  </stylesheets>
+</AnchorPane>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="AnchorPane" disable="false" prefHeight="835.0" prefWidth="1007.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="controllers.CheckoutController">
+    <children>
+        <Label fx:id="lblMyCart" layoutX="64.0" layoutY="63.0" prefHeight="40.0" prefWidth="143.0" text="Billing Details" underline="true">
+            <font>
+                <Font name="Times New Roman Bold" size="20.0" fx:id="x1" />
+            </font>
+            <textFill>
+                <Color blue="0.400" green="0.161" red="0.000" fx:id="x2" />
+            </textFill>
+        </Label>
+        <Label fx:id="lblFirstName" layoutX="64.0" layoutY="116.0" text="First Name">
+            <font>
+                <Font name="System Bold" size="15.0" fx:id="x3" />
+            </font>
+        </Label>
+        <TextField fx:id="txtFirstName" layoutX="64.0" layoutY="142.0" prefWidth="200.0" />
+        <Label fx:id="lblLastName" font="$x3" layoutX="450.0" layoutY="116.0" text="Last Name" />
+        <TextField fx:id="txtlastName" layoutX="447.0" layoutY="142.0" prefWidth="200.0" />
+        <Label fx:id="lblGender" font="$x3" layoutX="66.0" layoutY="175.0" text="Gender" />
+        <Label fx:id="lblIdType" font="$x3" layoutX="450.0" layoutY="174.0" text="ID Type" />
+        <TextField fx:id="txtIdType" disable="false" editable="false" layoutX="449.0" layoutY="206.0" prefWidth="200.0" text="Passport" />
+        <Label fx:id="lblIdNumber" font="$x3" layoutX="61.0" layoutY="244.0" text="ID Number" />
+        <TextField fx:id="txtIdNumber" layoutX="61.0" layoutY="276.0" prefWidth="200.0" />
+        <Label fx:id="lblAddress" font="$x3" layoutX="60.0" layoutY="318.0" text="Address" />
+        <TextField fx:id="txtAddress" layoutX="55.0" layoutY="344.0" prefWidth="200.0" />
+        <Label fx:id="lblCountry" font="$x3" layoutX="58.0" layoutY="386.0" text="Country" />
+        <Label fx:id="lblPostalCode" font="$x3" layoutX="450.0" layoutY="324.0" text="Postal code" />
+        <TextField fx:id="txtPostalCode" layoutX="450.0" layoutY="353.0" prefWidth="200.0" />
+        <ComboBox fx:id="cbCountry" layoutX="56.0" layoutY="418.0" prefWidth="200.0">
+            <items>
+                <FXCollections fx:factory="observableArrayList">
+                    <!--          <String fx:value="Item 1" />
+                    <String fx:value="Item 2" />
+                    <String fx:value="Item 3" />-->
+                </FXCollections>
+            </items>
+        </ComboBox>
+        <Label fx:id="lblPaymentMethod" font="$x1" layoutX="58.0" layoutY="476.0" prefHeight="40.0" prefWidth="195.0" text="Payment Method" textFill="$x2" underline="true" />
+        <Label fx:id="lblCardNumber" font="$x3" layoutX="60.0" layoutY="536.0" text="Card Number" />
+        <TextField fx:id="txtCardNumber" layoutX="60.0" layoutY="562.0" prefWidth="200.0" />
+        <Label fx:id="lblExpDate" font="$x3" layoutX="306.0" layoutY="532.0" text="Expiration Date" />
+        <ComboBox fx:id="cbExpYear" layoutX="306.0" layoutY="563.0" onAction="#bindCbMonth" prefWidth="90.0">
+            <items>
+                <FXCollections fx:factory="observableArrayList">
+                    <!--          <String fx:value="Item 1" />
+                    <String fx:value="Item 2" />
+                    <String fx:value="Item 3" />-->
+                </FXCollections>
+            </items>
+        </ComboBox>
+        <ComboBox fx:id="cbExpMonth" layoutX="402.0" layoutY="563.0" prefWidth="90.0">
+            <items>
+                <FXCollections fx:factory="observableArrayList">
+                    <!--          <String fx:value="Item 1" />
+                    <String fx:value="Item 2" />
+                    <String fx:value="Item 3" />-->
+                </FXCollections>
+            </items>
+        </ComboBox>
+        <Label fx:id="lblSecCode" font="$x3" layoutX="551.0" layoutY="536.0" text="Security Code" />
+        <TextField fx:id="txtSecCode" layoutX="550.0" layoutY="561.0" prefWidth="200.0" />
+        <Button fx:id="btnPlaceOrder" disable="false" layoutX="63.0" layoutY="699.0" mnemonicParsing="false" onAction="#btnPlaceOrderClick" prefWidth="185.0" text="Place Order" />
+        <RadioButton fx:id="rbMale" layoutX="63.0" layoutY="207.0" mnemonicParsing="false" selected="true" text="Male" />
+        <RadioButton fx:id="rbFemale" layoutX="139.0" layoutY="207.0" mnemonicParsing="false" text="Female" />
+        <RadioButton fx:id="rbOther" layoutX="221.0" layoutY="207.0" mnemonicParsing="false" text="Other" />
+        <Label fx:id="lblreqFirstName" layoutX="282.0" layoutY="142.0">
+            <textFill>
+                <Color blue="0.000" green="0.000" red="0.800" fx:id="x4" />
+            </textFill>
+        </Label>
+        <Label fx:id="lblReqLastName" layoutX="662.0" layoutY="142.0" text="" textFill="$x4" />
+        <Label fx:id="lblReqIDNumber" layoutX="269.0" layoutY="279.0" prefWidth="28.0" text="" textFill="$x4" />
+        <Label fx:id="lblreqAddress" layoutX="264.0" layoutY="343.0" text="" textFill="$x4" />
+        <Label fx:id="lblreqPostalCode" layoutX="650.0" layoutY="353.0" text="" textFill="$x4" />
+        <Label fx:id="lblReqCardNumber" layoutX="64.0" layoutY="596.0" text="" textFill="$x4" />
+        <Label fx:id="lblreqExpYear" layoutX="306.0" layoutY="600.0" text="" textFill="$x4" />
+        <Label fx:id="lblReqExpMonth" layoutX="402.0" layoutY="600.0" text="" textFill="$x4" />
+        <Label fx:id="lblReqSecurityCode" layoutX="552.0" layoutY="596.0" text="" textFill="$x4" />
+        <Label fx:id="lblReqCountry" layoutX="275.0" layoutY="421.0" text="" textFill="$x4" />
+        <Label fx:id="lblPromocode" font="$x3" layoutX="63.0" layoutY="613.0" text="Promo Code" />
+        <TextField fx:id="txtPromocode" layoutX="60.0" layoutY="637.0" prefWidth="200.0" text="" />
+        <DatePicker fx:id="dDatePicker" layoutX="447.0" layoutY="286.0" prefWidth="200.0" />
+        <Label fx:id="lblReqIdExpDate" layoutX="671.0" layoutY="289.0" text="" textFill="$x4" />
+        <Label fx:id="lblPassportExpDate" font="$x3" layoutX="449.0" layoutY="254.0" text="Passport Exp Date" />
+        <Label fx:id="lblValidPromoCode" layoutX="282.0" layoutY="637.0" text="" textFill="$x4" />
+    </children>
+</AnchorPane>
